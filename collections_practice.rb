@@ -33,3 +33,11 @@ def first_wa(array)
   end
   first_wa
 end
+
+def find_cool(array)
+  container = []
+  array.each do |element|
+    container << element if element[:temperature] == "cool" 
+  end
+  container
+end
